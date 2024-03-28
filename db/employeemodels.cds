@@ -4,11 +4,12 @@ namespace emp.details;
 using { reusable.type as types} from './ReusableTypes';
 using {
   cuid,
-  //managed
+  //managed=> this managed key for using in out logs..
 } from '@sap/cds/common';
 
 // here we are using like annotation=>@assert.unique for default values will be added in the output & which is not null and didn't allows duplicates...
 @assert.unique: {
+  //this is provided by sap and which are used to unique and not null values...
   email: [email],
   phone: [phone]
 }

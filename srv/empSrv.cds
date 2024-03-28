@@ -1,7 +1,9 @@
 using emp.details as db from '../db/employeemodels';
 
-@path: '/EmployeeSRV'
+@path: '/EmployeeSRV'//this is for remove the odata and add path as given an quotation...
 service Emp {
-    entity empfd as projection on db.empfulldetails;
+
+    //here empfd used as dummy you can take anything...
+   entity empfd as projection on db.empfulldetails;
     entity empad as projection on db.empaddress;
 }

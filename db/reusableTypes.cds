@@ -1,4 +1,4 @@
-namespace reusable.type;
+namespace reusable.type;//this data used for reusing in any where...
 
 type Amount : Decimal(10, 2);
 
